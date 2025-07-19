@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scan to Visit Said Al Salmou</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #f4f4f4 0%, #ceaf7f 100%);
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+    .qr-card {
+      background: #fff;
+      border-radius: 22px;
+      box-shadow: 0 8px 32px rgba(60,60,120,0.14);
+      border: 2px solid #ceaf7f22;
+      padding: 48px 36px 32px 36px;
+      max-width: 370px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+    }
+    .qr-logo {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      margin-bottom: 18px;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(206,175,127,0.13);
+      border: 1.5px solid #ceaf7f44;
+      padding: 8px;
+      display: block;
+    }
+    canvas {
+      margin: 0 auto 20px auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+      border-radius: 12px;
+      background: #fff;
+      padding: 8px;
+      width: 180px;
+      height: 180px;
+      display: block;
+    }
+    p {
+      color: #4b5563;
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .qr-footer {
+      margin-top: 24px;
+      font-size: 0.95rem;
+      color: #bfa16a;
+      opacity: 0.85;
+      letter-spacing: 0.2px;
+    }
+    @media (max-width: 500px) {
+      .qr-card {
+        padding: 20px 4px 12px 4px;
+        max-width: 98vw;
+      }
+      h1 {
+        font-size: 1.1rem;
+      }
+      .qr-logo {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 12px;
+      }
+      canvas {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="qr-card">
+    <h1>Scan to Open TelePizza_wittenberg Menu</h1>
+    
+    <canvas id="qrcode"></canvas>
+    <p>Use your phone's camera to visit the menu.</p>
+    <div class="qr-footer">TelePizza Wittenberg</div>
+  </div>
+  <script>
+    QRCode.toCanvas(document.getElementById('qrcode'), 'https://saidalsalmou.com', function (error) {
+      if (error) console.error(error);
+    });
+  </script>
+</body>
+</html>

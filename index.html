@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TelePizza-wittemberg</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.svg" rel="icon">
+  <link href="assets/img/logo.svg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Modal custom style to match website */
+    #bookTableModal .modal-content {
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(60,60,120,0.12);
+      font-family: 'Poppins', Arial, sans-serif;
+      padding: 0 8px 8px 8px;
+    }
+    #bookTableModal .modal-header {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    #bookTableModal .modal-title {
+      color: #2d3748;
+      font-weight: 600;
+      font-size: 1.3rem;
+      letter-spacing: 0.5px;
+    }
+    #bookTableModal .modal-body {
+      padding-top: 0;
+    }
+    #bookTableModal .form-label {
+      color: #6c757d;
+      font-weight: 500;
+    }
+    #bookTableModal .form-control {
+      border-radius: 8px;
+      border: 1px solid #e0e7ff;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    #bookTableModal .btn-primary {
+      background: var(--accent-color, #ceaf7f);
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(60,60,120,0.10);
+      transition: background 0.2s;
+    }
+    #bookTableModal .btn-primary:hover {
+      background: color-mix(in srgb, var(--accent-color, #ceaf7f), transparent 15%);
+    }
+    #bookTableModal .btn-close {
+      filter: grayscale(1);
+    }
+  </style>
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+ 
+      <a class="btn-getstarted d-none d-sm-block" href="#" data-bs-toggle="modal" data-bs-target="#bookTableModal">Book a Table</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+  
+  
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Menu</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="menu-filters isotope-filters mb-5">
+            <ul>
+              <li data-filter=".filter-pizza" class="filter-active">Pizza</li>
+              <li data-filter=".filter-burgers">Burgers</li>
+              <li data-filter=".filter-icecream">Ice Cream</li>
+              <li data-filter=".filter-dips">Dips & Dressings</li>
+              <li data-filter=".filter-kids">Kids Menu</li>
+            </ul>
+          </div>
+
+          <div class="menu-container isotope-container row gy-4">
+
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/HotDog-fond-1.jpg" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>PIZZA NACH WUNSCH <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce und Gouda, weitere Zutaten nach Wahl</p>
+                  <div class="price">TelePizza: 9,95 € | 4-Ecken: 11,95 € | MegaPizza: 19,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/salami.jpg" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>SALAMI <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, Salami und Gouda</p>
+                  <div class="price">TelePizza: 10,95 € | 4-Ecken: 12,95 € | MegaPizza: 21,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/hawai.jpg" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>HAWAII <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, Schinken, Ananas und Gouda</p>
+                  <div class="price">TelePizza: 11,95 € | 4-Ecken: 13,95 € | MegaPizza: 23,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-italia.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>ITALIA <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, Tomaten, Mozzarella, Rucola und Gouda</p>
+                  <div class="price">TelePizza: 11,95 € | 4-Ecken: 13,95 € | MegaPizza: 23,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/Pizza-Tonno.jpg" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>TONNO <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, roten Zwiebeln, Thunfisch und Gouda</p>
+                  <div class="price">TelePizza: 13,95 € | 4-Ecken: 15,95 € | MegaPizza: 25,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/HotDog-fond-1.jpg" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>HOT DOG <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Grillsauce, Hot-Dog-Würstchen, Gewürzgurken, Röstzwiebeln und Gouda</p>
+                  <div class="price">TelePizza: 13,95 € | 4-Ecken: 15,95 € | MegaPizza: 25,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-gyros.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>GYROS <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, Hähnchen-Gyros, roten Zwiebeln und Gouda</p>
+                  <div class="price">TelePizza: 13,95 € | 4-Ecken: 15,95 € | MegaPizza: 25,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-hollandaise.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>HOLLANDAISE <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Sauce Hollandaise, Schinken, Brokkoli und Gouda</p>
+                  <div class="price">TelePizza: 13,95 € | 4-Ecken: 15,95 € | MegaPizza: 25,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-western.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>WESTERN <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, roten Zwiebeln, Bratkartoffeln, Bacon und Gouda</p>
+                  <div class="price">TelePizza: 13,95 € | 4-Ecken: 15,95 € | MegaPizza: 25,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-raeuberbraut.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>RÜGEN <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Sauce Hollandaise, Blattspinat, Garnelen und Gouda</p>
+                  <div class="price">TelePizza: 14,95 € | 4-Ecken: 16,95 € | MegaPizza: 27,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-orient.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>ORIENT <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Curry-Sauce, Ananas, Hähnchenbrustfilet, Mozzarella und Gouda</p>
+                  <div class="price">TelePizza: 14,95 € | 4-Ecken: 16,95 € | MegaPizza: 27,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-mexiko.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>MEXIKO <span class="menu-tag">Pizza</span></h5>
+                  <p>mit BBQ-Sauce, Paprika, roten Zwiebeln, Mais, Hähnchenbrustfilet und Gouda</p>
+                  <div class="price">TelePizza: 15,95 € | 4-Ecken: 17,95 € | MegaPizza: 29,00 €</div>
+              <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-spinaci.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>SPINACI <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, Blattspinat 🌱 und Gouda</p>
+                  <div class="price">TelePizza: 10,95 € | 4-Ecken: 12,95 € | MegaPizza: 21,00 €</div>
+               <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-funghi.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>FUNGHI <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, Champignons und Gouda</p>
+                  <div class="price">TelePizza: 10,95 € | 4-Ecken: 12,95 € | MegaPizza: 21,00 €</div>
+               <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-4-jahreszeiten.png" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>4-JAHRESZEITEN <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, roten Zwiebeln, Blattspinat 🌱, Champignons, Paprika und Gouda</p>
+                  <div class="price">TelePizza: 14,95 € | 4-Ecken: 16,95 € | MegaPizza: 27,00 €</div>
+               <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-pizza">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/salami.jpg" alt="Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>VEGANE SALAMI <span class="menu-tag">Pizza</span></h5>
+                  <p>mit Tomatensauce, veganer Salami und veganem Pizzaschmelz</p>
+                  <div class="price">TelePizza: 12,95 € | 4-Ecken: 14,95 € | MegaPizza: 25,00 €</div>
+               <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------------ -->
+            <div class="col-lg-6 isotope-item filter-burgers">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/burger-crispychicken.png" alt="Crispy Chicken Burger" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Crispy Chicken Burger <span class="menu-tag">Scharf</span></h5>
+                  <p>Burger-Brötchen mit Crunchy Chicken (scharf), Tomaten, Blattsalat und Remoulade.</p>
+                  <div class="price">10.45 €</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-burgers">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/burger-original.png" alt="Original Hamburger" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Original Hamburger</h5>
+                  <p>Burger-Brötchen mit 125g Rindfleisch, roten Zwiebeln, Gewürzgurken, Tomaten, Blattsalat und Grillsauce.</p>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-burgers">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/burger-cheese.png" alt="Say Cheese Burger" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Say Cheese Burger <span class="menu-tag">Cheese</span></h5>
+                  <p>Burger-Brötchen mit 125g Rindfleisch, roten Zwiebeln, Gewürzgurken, Tomaten, Blattsalat, Chester-Käse und Grillsauce.</p>
+                  <div class="price">10.45 €</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-burgers">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/burger-hot-bbq.png" alt="BBQ Bacon Burger" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>BBQ Bacon Burger <span class="menu-tag">BBQ</span></h5>
+                  <p>Burger-Brötchen mit 125g Rindfleisch, roten Zwiebeln, Gewürzgurken, Tomaten, Blattsalat, Bacon und BBQ-Sauce.</p>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-burgers">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/burger-schnitzel.png" alt="Schnitzel Burger" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Schnitzel Burger</h5>
+                  <p>Burger-Brötchen mit paniertem Schnitzel, roten Zwiebeln, Gewürzgurke, Tomaten, Salat und hausgemachter Grillsauce.<br>Wähle dein Brötchen: Rustikal-Brötchen oder Vollkorn-Brötchen</p>
+                  <div class="price">10.45 €</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-burgers">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/burger-original-hot.png" alt="Tele Burger Hot" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Tele Burger Hot <span class="menu-tag">Scharf</span></h5>
+                  <p>Burger-Brötchen mit 125g Rindfleisch, roten Zwiebeln, Gewürzgurken, Tomaten, Blattsalat, Jalapeños (scharf) und Grillsauce.</p>
+                  <div class="price">10.45 €</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-burgers">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/burger-vegan.png" alt="Vegan Burger" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Vegan Burger <span class="menu-tag">Vegan</span></h5>
+                  <p>Burger-Brötchen mit veganem Patty, roten Zwiebeln, Gewürzgurken, Tomaten, Blattsalat und Grillsauce.</p>
+                  <div class="price">10.45 €</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-burgers">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/burger-veggie-cheese.png" alt="Veggie Cheese Burger" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Veggie Cheese Burger <span class="menu-tag">Vegetarisch</span></h5>
+                  <p>Burger-Brötchen mit veganem Patty, roten Zwiebeln, Gewürzgurken, Tomaten, Blattsalat, Chester-Käse und Grillsauce.</p>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Ice Cream -->
+            <div class="col-lg-6 isotope-item filter-icecream">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-2.webp" alt="Ice Cream" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Charlie Schokolade <span class="menu-tag">Chocolate</span></h5>
+                  <p>230 ml – Exclusively at Telepizza</p>
+                  <div class="price">€3.95</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-icecream">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-2.webp" alt="Ice Cream" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Wendy Weisse <span class="menu-tag">White Chocolate</span></h5>
+                  <p>230 ml – Exclusively at Telepizza</p>
+                  <div class="price">€3.95</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-icecream">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-2.webp" alt="Ice Cream" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Karla Karamell <span class="menu-tag">Caramel</span></h5>
+                  <p>230 ml – Exclusively at Telepizza</p>
+                  <div class="price">€3.95</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-icecream">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-2.webp" alt="Ice Cream" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Kalle Cookie <span class="menu-tag">Cookie</span></h5>
+                  <p>230 ml – Exclusively at Telepizza</p>
+                  <div class="price">€3.95</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-icecream">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-2.webp" alt="Ice Cream" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Bella Bonetti <span class="menu-tag">Ice Cream</span></h5>
+                  <p>230 ml – Exclusively at Telepizza</p>
+                  <div class="price">€3.95</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-icecream">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-2.webp" alt="Ice Cream" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Eddie Erdbeere <span class="menu-tag">Strawberry 🍓💙</span></h5>
+                  <p>230 ml – Exclusively at Telepizza</p>
+                  <div class="price">€3.95</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-icecream">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-2.webp" alt="Ice Cream" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Manni Mango <span class="menu-tag">Mango 🥭💙</span></h5>
+                  <p>230 ml – Exclusively at Telepizza</p>
+                  <div class="price">€3.95</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dessert">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-2.webp" alt="Schokotasche" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Schokotasche</h5>
+                  <p>Blätterteigtasche gefüllt mit leckerer Schoko-Creme-Füllung.</p>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dessert">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-7.webp" alt="Vanilletasche" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Vanilletasche</h5>
+                  <p>Blätterteigtasche gefüllt mit leckerer Vanille-Creme-Füllung.</p>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dessert">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/restaurant/dessert-2.webp" alt="Apfeltasche" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Apfeltasche</h5>
+                  <p>Blätterteigtasche gefüllt mit Äpfeln und Zimt</p>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Dips & Dressings -->
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-suess-sauer.png" alt="Süß-Sauer Dip" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Süß-Sauer Dip</h5>
+                  <p>Süß-Sauer Dip</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-aioli-dip (1).png" alt="Aioli Dip" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Aioli Dip</h5>
+                  <p>Aioli-Dip</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-bbq-dip.png" alt="BBQ Dip" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>BBQ Dip</h5>
+                  <p>BBQ Dip</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-senf-sauce.png" alt="Honig-Senf Dip" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Honig-Senf Dip</h5>
+                  <p>Honig-Senf-Dip</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-aioli-dip (1).png" alt="Kräuter Dip" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Kräuter Dip <span class="menu-tag">Vegan</span></h5>
+                  <p>Kräuter-Dip</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-senf-sauce (1).png" alt="Mayonnaise Dip" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Mayonnaise Dip</h5>
+                  <p>Mayonnaise Dip</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-curry-ketchup.png" alt="Ketchup Dip" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Ketchup Dip</h5>
+                  <p>Tomatenketchup</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-honig-balsamico-dressing.png" alt="Honig-Balsamico Dressing" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Honig-Balsamico Dressing</h5>
+                  <p>Honig-Balsamico-Dressing</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-haus-dressing.png" alt="Haus Dressing" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Haus Dressing</h5>
+                  <p>Haus-Dressing</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-dips">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/extra-joghurt-dressing.png" alt="Joghurt Dressing" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Joghurt Dressing</h5>
+                  <p>Joghurt-Dressing (Sylter Art)</p>
+                  <div class="price">€1.30</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Kids Menu -->
+            <div class="col-lg-6 isotope-item filter-kids">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-goldnugget.png" alt="Kids Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Pizza Goldnugget</h5>
+                  <p>1x Junior-Pizza (ø 22 cm). Pizzateig mit Tomatensauce, Chicken Nuggets und Gouda.</p>
+                  <div class="price">€7.45</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-kids">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/kidspizza (1).png" alt="Kids Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Pizza Bärenhunger</h5>
+                  <p>1x Junior-Pizza (ø 22 cm). Pizzateig mit Tomatensauce, Salami und Gouda.</p>
+                  <div class="price">€7.45</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-kids">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/kidsmenue_5nuggets (1).png" alt="Kids Pizza" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Nuggets Löwenmahl</h5>
+                  <p>5 Chicken Nuggets mit Ketchup-Dip.</p>
+                  <div class="price">€7.45</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-kids">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/pizza-margherita (2).png" alt="Kids Nuggets" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>Pizza Dschungelsnack</h5>
+                  <p>1x Junior-Pizza (ø 22 cm). Pizzateig mit Tomatensauce und Gouda.</p>
+                  <div class="price">€7.45</div>
+                  <a href="tel:034914090955" class="order-btn" style="border-radius: 0px;">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 isotope-item filter-kids">
+              <div class="d-flex menu-item align-items-center gap-4">
+                <img src="assets/img/pizza/kidsbox.png" alt="Kids Meal" class="menu-img img-fluid rounded-3" loading="lazy">
+                <div class="menu-content">
+                  <h5>KidsMenü</h5>
+                  <div class="price">€7.45</div>
+                  <p>Junior-Pizza (22cm), Tomatensauce, Gouda-Käse wahlweise mit Salami, Hinterschinken, Ananas, Thunfisch, Champignons oder Spinat (mit Knoblauch)</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up">
+          <a href="#" class="download-menu">
+            <i class="bi bi-file-earmark-pdf"></i> Download Full Menu
+          </a>
+        </div>
+
+      </div>
+
+    </section><!-- /Menu Section -->
+
+ 
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Book a Table Modal -->
+  <div class="modal fade" id="bookTableModal" tabindex="-1" aria-labelledby="bookTableModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookTableModalLabel">Book a Table</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="modal-body">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="phone" required>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="mb-3">
+            <label for="time" class="form-label">Time</label>
+            <input type="time" class="form-control" id="time" required>
+          </div>
+          <div class="mb-3">
+            <label for="guests" class="form-label">Number of Guests</label>
+            <input type="number" class="form-control" id="guests" min="1" max="20" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
